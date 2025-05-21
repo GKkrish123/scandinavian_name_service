@@ -10,34 +10,25 @@ This service corrects and suggests the most likely authentic names for leads fro
 **1. Create a virtual environment**
 
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
 
-text
+source venv/bin/activate
 
 **2. Install dependencies**
 
 pip install -r requirements.txt
 
-text
-
 **3. Run migrations**
 
 python manage.py migrate
-
-text
 
 **4. Start the server**
 
 python manage.py runserver
 
-text
-
 **Or, run with Docker:**
 
 docker build -t scandi-name-corrector .
 docker run -p 8000:8000 scandi-name-corrector
-
-text
 
 ---
 
@@ -47,8 +38,6 @@ curl -X POST http://localhost:8000/api/suggest/
 -H 'Content-Type: application/json'
 -d '{"name": "Naeik", "country": "Sweden"}'
 
-text
-
 **Example response:**
 
 {
@@ -56,8 +45,6 @@ text
 "country": "Sweden",
 "suggestions": ["Nöik", "Nöke"]
 }
-
-text
 
 ---
 
