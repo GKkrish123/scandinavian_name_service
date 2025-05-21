@@ -60,18 +60,18 @@ curl -X POST http://localhost:8000/api/suggest/
 ## Room for Improvement
 
 - **Expand name frequency lists**: Use official national registries for higher accuracy.
-- **Improve transliteration rules**: Add more context aware and phonetic mappings.
-- **Better ML models**: Train fastText or similar embeddings on a much larger datasets of real names.
-- **Multilingual support**: Add support for more countries or regions.
+- **Improve transliteration rules**: Adding more context aware and phonetic mappings.
+- **Better ML models**: Training fastText or similar embeddings on a much larger datasets of real names.
+- **Multilingual support**: Adding support for more countries, regions, languages or custom business rules as needed.
 - **User feedback loop**: Improving model tuning with users' feedback loops.
 
 ---
 
 ## Production Considerations
 
-- **Security**: Add authentication and rate limiting for public APIs.
+- **Security**: Adding authentication and rate limiting for public APIs.
 - **Scalability**: Using production ready database and caching frequent queries.
-- **Monitoring**: Log requests and monitor performance.
-- **Testing**: Add automated and integration tests for multiple query scenarios.
+- **Monitoring**: Logging requests and monitor performance.
+- **Testing**: Adding automated and integration tests for multiple query scenarios.
 
 ---
