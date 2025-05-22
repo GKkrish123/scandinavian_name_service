@@ -2,5 +2,6 @@ django
 djangorestframework
 unidecode
 fuzzywuzzy[speedup]
-fasttext
+# fasttext
+fasttext-wheel
 requests
