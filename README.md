@@ -50,6 +50,8 @@ curl -X POST http://localhost:8000/api/suggest/
 "suggestions": ["Nöik", "Nöke"]
 }
 
+Deployed Service - https://scandinavian-name-service.onrender.com/admin/
+
 ---
 
 ## Assumptions
