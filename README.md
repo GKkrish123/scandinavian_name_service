@@ -30,6 +30,10 @@ python manage.py runserver
 docker build -t scandi-name-corrector .
 docker run -p 8000:8000 scandi-name-corrector
 
+**Debug whole command**
+
+python manage.py makemigrations name_correction && python manage.py migrate && python manage.py collectstatic --noinput && python manage.py createsuperuser --noinput --username=myadmin --email=myadmin@example.com && python -m gunicorn scandinavian_name_service.wsgi:application
+
 ---
 
 ## Test the API
